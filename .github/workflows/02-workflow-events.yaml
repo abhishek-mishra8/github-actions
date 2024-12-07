@@ -1,0 +1,29 @@
+name: 02-workflow-evets
+on : push
+jobs : 
+    show-the-event :
+        runs-on: ubuntu-latest
+        steps:
+            - run : 
+                echo "show the trigger ${{github.event_name}}"
+    
+    show-the-repository:
+        runs-on: macos-10.15
+        steps:
+            - run :
+                echo "let me find the ${{github.repository}}"
+            - run :
+                echo "Token here ${{github.token}}" 
+
+    
+
+
+
+
+  
+  
+    
+
+
+
+
