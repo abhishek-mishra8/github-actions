@@ -11,7 +11,7 @@ jobs :
       steps:
         - name : Failed steps
           run : 
-            echo "I will Fail"
+            echo I will Fail"
             exit 1
         - name : one more step
           run : 
