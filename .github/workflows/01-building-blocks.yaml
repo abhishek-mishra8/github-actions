@@ -13,6 +13,9 @@ jobs :
           run : |
             echo "I will Fail"
             exit 1
+        - name : one more step
+          run : 
+            echo "Let me run this"
     echo-finalstep:
       runs-on: ubuntu-latest
       steps:
