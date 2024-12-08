@@ -1,0 +1,12 @@
+name: 04-actions-workflow
+on: push
+
+jobs:
+   build:
+    runs-on: ubuntu-22.04
+    steps:
+       - name: checkout the code
+         uses: actions/checkout@v4
+       - name: printingFolders
+         run : ls  
+         
