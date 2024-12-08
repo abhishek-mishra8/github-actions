@@ -15,7 +15,7 @@ jobs:
          with:
            node-version: '20.x'
        - name: Install-Dependecies
-         run : npm@5 ci
+         run : npm ci
        - name: run the unit test
          run : npm run test
          
