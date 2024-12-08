@@ -1,0 +1,23 @@
+name: 03-workflow-runner
+
+on: push
+
+jobs:
+    ubuntu-echo:
+        runs-on: ubuntu-22.04
+        steps:
+            - name: ubuntu vm validation
+              run: echo "I am running on ${{runner.os}}"
+    windows-echo:
+        runs-on: windows-2022
+        steps:
+            - name: windows vm validation
+              shell: bash
+              run: echo "I am running on ${{runner.os}}"
+    mac-echo:
+        runs-on: macos-12
+        steps:
+            - name: mac validation
+              run: 
+                echo "I am running on  ${{runner.os}}"
+        
