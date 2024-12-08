@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-22.04
     defaults:
       run : 
-        working-directory: 04-using-actionsß
+        working-directory: 04-using-actions
     steps:
        - name: checkout the code
          uses: actions/checkout@v4
